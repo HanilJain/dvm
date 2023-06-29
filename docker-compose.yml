@@ -4,8 +4,6 @@ services:
   web:
     build: 
       context: .
-    image: dvmtask.azurecr.io/dvmtask
-    container_name: dvmtask
     command: python manage.py runserver 0.0.0.0:8000
     volumes:
       - .:/dvm
